@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat&Eat</title>
+    <link rel="stylesheet" type="text/css" href="chatbot.css">
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+.col-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.col {
+  display: table-cell;
+  padding: 5px;
+  height: 100%;
+}
+img{
+    height: 100%;
+    width: 100%;
+    border: 3px solid black;
+}
+@media only screen and (max-width: 600px) {
+  .col { 
+    display: block;
+    width: 100%;
+  }
+}
+</style>
+  </head>
+
+  <body>
+
+      <script src="https://kit.fontawesome.com/d8bd919f93.js" crossorigin="anonymous"></script>
+
+
+
+      <div class="col-container">
+          <div class="col" style="background: #411f15">
+              <div class="zoom">
+                  <img src="burgermeal.png" />
+              </div>
+          </div>
+
+          <div class="col" style="background: #411f15">
+              <div class="zoom">
+                  <img src="pastameal.png" />
+              </div>
+          </div>
+
+          <div class="col" style="background: #411f15">
+              <div class="zoom">
+                  <img src="burgermeal.png" />
+              </div>
+              
+          </div>
+      </div>
+      <button id="button" class="open-button" onclick="openForm()">Order Here</button>
+
+      <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+
+              <div class="chat-container">
+                  <div class="chat-header">
+                      <img class="icon" src="chat&Eaticon.png" />
+                      <h2 style="text-align: center; font-size: 30px; margin-top: 8.7px; ">Chat&Eat</h2>
+                  </div>
+                  <div class="chat-body" id="chat-body">
+                      <p style="padding: 13px; text-align: left; border-radius: 10px; background-color: grey; color: white; float: left; margin-right: 15px;">Hello, Goodday!! Can I take your order?</p>
+                  </div>
+                  <div class="chat-input">
+
+                      <input type="text" id="user-input" placeholder="Enter your Order Here...">
+
+                  </div>
+              </div>
+
+              <br />
+              <button type="button" class="btn" onclick="sendMessage()" id="button">Send</button>
+              <button type="button" class="btn cancel" onclick="closeForm()" id="close">Close</button>
+          </form>
+      </div>
+      <script src="chatbot.js"></script>
+  </body>
+</html>
