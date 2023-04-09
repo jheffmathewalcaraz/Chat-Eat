@@ -107,7 +107,7 @@
 }
 
 body {
-    background: #212223;
+    background: #411f15;
     font-family: Roboto;
     color: #efdefe;
 }
@@ -215,3 +215,4 @@ h3 {
     ::-webkit-scrollbar-thumb:hover {
         background: #A27171;
     }
+
