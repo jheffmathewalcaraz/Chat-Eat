@@ -37,7 +37,6 @@ document.getElementById("user-input").addEventListener("keydown", function (even
     }
 });
 
-
 var order = {
     "burger meal": 0,
     "pasta meal": 0,
@@ -58,7 +57,7 @@ var order = {
 var prices = {
     "burger meal": 289,
     "pasta meal": 299,
-    "chicken meal": 319,
+    "chicken meal": 299,
     "softdrink": 50,
     "softdrink_medium": 59,
     "softdrink_large": 79,
@@ -69,7 +68,7 @@ var prices = {
     "fries_medium": 59,
     "fries_large": 70,
     "sundae": 40,
-    "pie": 30
+    "pie": 59
 };
 
 var orderComplete = false;
@@ -86,8 +85,6 @@ function summarizeOrder() {
     summary += "\nTotal price: ₱" + totalPrice.toFixed(2);
     addMessage(summary, "bot");
 }
-
-
 
 var meal = "";
 
@@ -125,17 +122,26 @@ function handleUserMessage(message) {
             } else {
                 response = "Would you like to upgrade your drinks to medium or large?";
             }
-        } else if (message.includes("medium") || message.includes("large")) {
+        } else if (message.includes("medium") || message.includes("large") || message.includes("no upgrade")) {
             var size = message;
+            if (message.includes("no upgrade")) {
+                size = "";
+            }
             if (order["softdrink"] > 0) {
-                order["softdrink_" + size]++;
-                order["softdrink"]--;
+                if (size) {
+                    order["softdrink_" + size]++;
+                    order["softdrink"]--;
+                }
             } else if (order["iced tea"] > 0) {
-                order["iced tea_" + size]++;
-                order["iced tea"]--;
+                if (size) {
+                    order["iced tea_" + size]++;
+                    order["iced tea"]--;
+                }
             } else if (order["fries"] > 0 && (meal === "burger meal" || meal === "pasta meal")) {
-                order["fries_" + size]++;
-                order["fries"]--;
+                if (size) {
+                    order["fries_" + size]++;
+                    order["fries"]--;
+                }
             }
 
             if (order["sundae"] > 0) {
@@ -172,6 +178,8 @@ function handleUserMessage(message) {
 
     addMessage(response, "bot");
 }
+
+
 
 
 
