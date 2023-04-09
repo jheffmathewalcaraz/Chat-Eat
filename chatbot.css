@@ -135,6 +135,25 @@ h3 {
     }
 }
 
+.menu {
+    float: left;
+    width: 20%;
+}
+
+.main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.right {
+    background-color: lightblue;
+    float: left;
+    width: 20%;
+    padding: 10px 15px;
+    margin-top: 7px;
+}
 
 
 
