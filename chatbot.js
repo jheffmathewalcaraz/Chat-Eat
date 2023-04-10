@@ -57,7 +57,7 @@ var order = {
 var prices = {
     "burger meal": 190,
     "pasta meal": 200,
-    "chicken meal": 200,
+    "chicken meal": 249,
     "softdrink": 50,
     "softdrink_medium": 59,
     "softdrink_large": 79,
