@@ -55,19 +55,19 @@ var order = {
 };
 
 var prices = {
-    "burger meal": 289,
-    "pasta meal": 299,
-    "chicken meal": 299,
+    "burger meal": 190,
+    "pasta meal": 200,
+    "chicken meal": 200,
     "softdrink": 50,
     "softdrink_medium": 59,
     "softdrink_large": 79,
-    "iced tea": 45,
-    "iced tea_medium": 55,
-    "iced tea_large": 65,
+    "iced tea": 50,
+    "iced tea_medium": 59,
+    "iced tea_large": 79,
     "fries": 49,
     "fries_medium": 59,
     "fries_large": 70,
-    "sundae": 40,
+    "sundae": 49,
     "pie": 59
 };
 
