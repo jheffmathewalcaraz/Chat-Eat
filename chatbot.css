@@ -51,14 +51,15 @@
   margin-right: 10px;
 }
 
-.chat-input button {
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
+    .chat-input button {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: Arial;
+    }
 
 
 .chat-message {
@@ -69,6 +70,7 @@
     border-radius: 10px;
     align-self: flex-end;
     min-width: 60px;
+    font-family: Arial;
 }
 
 .user-message {
@@ -77,16 +79,18 @@
     color: white;
     align-self: flex-end;
     text-align: center;
+    font-family: Arial;
 }
 
 .bot-message {
     text-align: left;
     border-radius: 10px;
-    background-color: #BCBCBC;
+    background-color: #999898;
     color: white;
     align-self: flex-start;
     min-width: 50px;
     text-align: left;
+    font-family: Arial;
 }
 #button {
     background-color: #572010;
