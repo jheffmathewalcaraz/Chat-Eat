@@ -160,12 +160,12 @@ h3 {
 
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
-    padding: 10px 40px;
+    padding: 15px 55px;
     background-color: #04AA6D;
     color: white;
-    font-size: 17px;
+    font-size: 25px;
     max-width: 300px;
-    border-radius: 20px;
+    border-radius: 30px;
     border: none;
     cursor: pointer;
     position: fixed;
