@@ -15,6 +15,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
+  
 }
 
 .chat-header {
@@ -81,7 +82,7 @@
 .bot-message {
     text-align: left;
     border-radius: 10px;
-    background-color: grey;
+    background-color: #BCBCBC;
     color: white;
     align-self: flex-start;
     min-width: 50px;
